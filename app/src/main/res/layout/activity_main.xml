@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/sprinkle__2_"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="64dp"
+        android:contentDescription="logo"
+        android:src="@drawable/logo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/app_name"
+        android:textColor="@color/grdTeal"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/cardBg"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appName">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="18dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:text="@string/greet"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:text="@string/ask"
+                android:textColor="@color/grayViol"
+                android:textSize="18sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Name"
+                    android:inputType="textCapWords"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/hintClr" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                style="@style/btn_style"
+                android:id="@+id/btnStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:shadowColor="#673AB7"
+                android:shadowDx="15"
+                android:shadowDy="15"
+                android:shadowRadius="15"
+                android:text="START"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:cornerRadius="10dp"
+                app:rippleColor="#6949fe" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:padding="10dp"
+        android:text="Created By C.D.B ❤"
+        android:textColor="@color/gray"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

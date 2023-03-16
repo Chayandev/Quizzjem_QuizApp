@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Quizzjem</string>
+    <string name="greet">Welcome!</string>
+    <string name="ask">Please enter your name.</string>
+    <string name="comment">Total Correct Answer :</string>
+    <string name="score">Your final Score is</string>
+</resources>

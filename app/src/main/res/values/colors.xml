@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grdTeal">#38f8c3</color>
+    <color name="bg">#1f1147</color>
+    <color name="lightViol">#6949fe</color>
+    <color name="cardBg">#d4d1f5</color>
+    <color name="grayViol">#ababcb</color>
+    <color name="hintClr">#6848ed</color>
+    <color name="btnBg">#7d4bd4</color>
+    <color name="gray">#635E75</color>
+    <color name="bgSplash">#2d3558</color>
+    <color name="red">#E10021</color>
+    <color name="gradStart">#775bf6</color>
+    <color name="gradEnd">#4a399a</color>
+    <color name="lightYellow">#fbca2b</color>
+    <color name="darkYellow">#fab02c</color>
+
+
+</resources>
